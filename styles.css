@@ -1,0 +1,124 @@
+ /* Home Page */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    width: 90%;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+}
+
+.logo-container,
+.nav-links {
+    display: flex;
+}
+
+.logo-container {
+    flex: 1;
+}
+
+
+nav {
+    flex: 2;
+}
+
+.nav-links {
+    justify-content: space-around;
+    list-style: none;
+   
+}
+
+.nav-link {
+    color: #5f5f79;
+    font-size: 15px;
+    text-decoration: none;
+    
+}
+
+.nav-links :hover {
+color: black;
+}
+
+.active-nav-links  {
+    color: black !important;
+}
+
+.presentation {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+
+.introduction {
+    flex: 1;
+}
+
+.intro-text h1 {
+    font-size: 27px;
+    font-weight: 500;
+    background: linear-gradient(to right, #494964, #6f6f89);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.intro-text p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #585772;
+}
+
+.cover {
+    flex: 1;
+}
+
+.cover {
+    height: 60vh;
+}
+
+/* Student Page */
+
+.two-column-wrapper {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  min-height: 80vh;
+  align-items: center;
+}
+
+.student-information {
+    text-decoration: underline;
+}
+
+.student-name-space {
+    color: #fff;
+}
+
+.linkButton {
+    text-decoration: none;
+
+    border: solid 2px;
+    border-radius: 20px;
+    color: #585772;
+
+    padding: 0px 20px;
+
+}
+
+.linkButton:hover {
+    background-color: #585772;
+    color: #fff;
+}
+
+
