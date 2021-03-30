@@ -1,0 +1,37 @@
+
+<%-include('header')%>
+
+
+<header id="header">
+    <nav>
+        <div class="container">
+            <div class="text-center">
+                <a href="/" class="nav-brand text-dark">Lecturer Management System</a>
+            </div>
+        </div>
+    </nav>
+</header>
+    
+
+<main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+            <div class="filter">
+                <a href="/route/index"><i class="fas fa-angle-double-left"></i>All Students</a>
+            </div>
+        </div>
+        <div class="form-title text-center">
+            <h2 class="text-dark">New Student</h2>
+            <span class="text-dark">Use the below form to create a new student account</span>
+        </div>
+
+        <!-- form handling-->
+     
+        <%-include('form')-%>
+
+    </div>
+</main>
+
+
+
+<%-include('footer')-%>

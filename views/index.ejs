@@ -1,0 +1,64 @@
+
+<%-include('header')-%>
+
+
+
+
+    <header id="header">
+        <nav>
+            <div class="container">
+                <div class="text-center">
+                    <a href="/" class="nav-brand text-dark">Lecturer Management System</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+<main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+            <a href="/bachelor-degree" class="border-shadow">
+                <span class="text-gradient">Bachelor Degrees<i class="" ></i></span>
+            </a>
+        </div>
+        <div class="box-nav d-flex justify-between">
+            <a href="/add-student" class="border-shadow">
+                <span class="text-gradient">Add Student<i class="" ></i></span>
+            </a>
+        </div>
+        <div class="box-nav d-flex justify-between">
+            <a href="/route/logout" class="border-shadow">
+                <span class="text-gradient">Logout<i class="" ></i></span>
+            </a>
+        </div>
+
+
+        <div class="form-title text-center">
+            <h2 class="text-dark">Student Information List</h2>
+          
+        </div>
+    
+        <!-- form handling-->
+        <form action="/" method="POST">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Student Name</th>
+                        <th>Email Address</th>
+                        <th>Date of Birth</th>
+                        <th>Degree Enrolled</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <%-include('show')-%>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</main>
+
+
+
+<%-include('footer')-%>
