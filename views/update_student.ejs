@@ -16,7 +16,11 @@
     <div class="container">
         <div class="box-nav d-flex justify-between">
             <div class="filter">
+
                 <a href="/"><i class="fas fa-angle-double-left"></i>Student Information List</a>
+=======
+                <a href="/route/index"><i class="fas fa-angle-double-left"></i>All Students</a>
+
             </div>
         </div>
         <div class="form-title text-center">
@@ -31,6 +35,7 @@
     <div class="new_student">
          <div class="form-group"> 
              <label for="name" class="text-dark">Name</label>
+
              <input type="hidden" name="id" value="<%=user._id%>">
              <input type="text" name="name" value="<%=user.name%>" placeholder="name surname">
          </div>
@@ -45,6 +50,22 @@
          <div class="form-group">
              <label for="DegreeE" class="text-dark">Degree Enrolled</label>
              <input type="text" name="degree" value="<%=user.degree%>" placeholder="bachelor degree">
+=======
+             <input type="hidden" name="id" value="">
+             <input type="text" name="name" placeholder="name surname">
+         </div>
+         <div class="form-group">
+             <label for="Email" class="text-dark">Email</label>
+             <input type="text" name="email" placeholder="example@gmail.com">
+         </div>
+         <div class="form-group">
+             <label for="DOB" class="text-dark">Date of Birth</label>
+             <input type="text" name="DOB" placeholder="dd-mm-yyyy">
+         </div>
+         <div class="form-group">
+             <label for="DegreeE" class="text-dark">Degree Enrolled</label>
+             <input type="text" name="degree" placeholder="bachelor degree">
+
          </div>
 
          <div class="form-group">
