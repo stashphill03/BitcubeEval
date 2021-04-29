@@ -1,0 +1,54 @@
+
+<%-include('header')-%>
+
+
+
+<header id="header">
+    <nav>
+        <div class="container">
+            <div class="text-center">
+                <a href="/" class="nav-brand text-dark">Lecturer Management System</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+            <div class="filter">
+                <a href="/"><i class="fas fa-angle-double-left"></i>Student Information List</a>
+            </div>
+        </div>
+        <div class="form-title text-center">
+            <h2 class="text-dark">Bachelor Degrees List</h2>
+          
+        </div>
+        
+        <!-- form handling-->
+        <form method="POST" action="/">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                       
+                        <th>Degree Name</th>
+                        <th>Degree Duration in Years</th>
+                        <th>Students Enrolled</th>
+                        <th>Courses</th>
+                    <!-- <th>Action</th> -->   
+                    </tr>
+                </thead>
+                <tbody>
+                  
+                    <%-include('show_degrees')-%>
+
+                </tbody>
+        
+        </form>
+    </div>
+</main>
+
+
+
+
+<%-include('footer')-%>
